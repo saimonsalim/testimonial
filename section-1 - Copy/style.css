@@ -1,0 +1,105 @@
+.team-area {
+	height: 100vh;
+	background-size: cover;
+}
+.our-team {
+	padding: 50px 0 50px;
+	margin-top: 200px;
+	text-align: center;
+	position: relative;
+	background: #f7f5ec;
+	overflow: hidden;
+}
+.our-team .pic {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+.our-team .pic:before {
+  content: "";
+  background: #eb1768;
+  right: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  opacity: .9;
+  transition: .3s;
+  transform: scale(3);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 135%;
+}
+.our-team:hover .pic:before {
+  height: 100%;
+}
+.pic {
+}
+.our-team .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: .9s;
+  transform: scale(1);
+}
+.pic {
+}
+.our-team .pic:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #eb1768;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+.our-team:hover .pic img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transition: ;
+  transform: scale(.7);
+}
+.our-team .post {
+	display: block;
+	color: #4e5052;
+	text-transform: capitalize;
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #eb1768;
+  left: 0;
+  bottom: -100px;
+  transition: .3s;
+  position: absolute;
+}
+.our-team:hover .social {
+  bottom: 0;
+}
+.social li {
+  display: inline-block;
+ 
+}
+.our-team .social li a {
+  font-size: 15px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: ;
+  color: #fff;
+  transition: .3s;
+}
+
+.our-team .social li a:hover {
+  background: #f7f5ec;
+  color: #eb1768;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+} 
